@@ -56,6 +56,9 @@ body{
 
 /*---------MAIN----------*/
 
+img {
+    max-width: 100%;
+}
 .floater-section{
     float: left;
     min-height: 300px;
@@ -89,10 +92,12 @@ body{
 
     .width-md-50{
         width: 50%;
+        text-align: center;
     }
 
     .width-md-33{
         width: 33%;
+        text-align: center;
     }
 
      /* end of 540px breakpoint*/
@@ -111,9 +116,6 @@ body{
     }
     .width-lg-100{
         width: 100%;
-    }
-    img {
-        max-width: 100%;
     }
     
     .img-corner {
