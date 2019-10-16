@@ -1,0 +1,43 @@
+@import "colors.css";
+@import url(layout.css);
+@import "nav.css";
+
+h1{
+    text-align: center;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: rgb(141, 160, 179);
+    margin: 20px;
+}
+
+h2{
+    text-align: center;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: rgb(248, 238, 238);
+    padding: 5px;
+    font-weight: 200;
+    margin: 10px;
+}
+
+h3{
+    text-align: center;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: rgb(209, 204, 204);
+    padding: 5px;
+    font-weight: 400;
+    margin: 0px 25px;
+}
+
+h4{
+    text-align: center;
+    font-family: 'Saira Semi Condensed', sans-serif;
+    color: rgb(209, 204, 204);
+    padding: 35px 0px 0px;
+    font-weight: 200;
+    margin: 0px 25px;
+}
+
+p{
+    font-family: 'PT Sans', sans-serif;
+    color: rgb(193, 207, 207); 
+    padding: 15px;
+}

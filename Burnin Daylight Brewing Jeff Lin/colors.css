@@ -1,0 +1,19 @@
+.black {
+    background-color: rgb(12, 12, 12);
+}
+.darkgray {
+    background-color: rgb(50, 50, 50);
+}
+
+.lightgray {
+    background-color: rgb(85, 84, 84);
+}
+
+
+.transparent {
+    background-color: transparent;
+}
+
+.grayblue {
+    background-color:  rgb(103, 113, 143);
+}
