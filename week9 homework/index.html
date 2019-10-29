@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Week 9 Homework</title>
+</head>
+<body>
+    
+    <header>
+        <nav id="navBar">
+            <button id="colorButton">Color Me!</button>
+        </nav>
+    </header>
+
+    <main>
+        <div id="contentMain">
+            <h1 onclick="this.innerHTML='The Nav Bar Color Changed!'">Hello Java Script!</h1>
+        </div>
+
+        <button id="button" onclick="myFunction()">Set background color</button>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script>
+        /* function()is for function that produces something {} is function for void result or cosmetic */
+        document.getElementById("colorButton").addEventListener( "click", function(){
+            
+            var mainContent = document.getElementById("contentMain");
+
+            /* when type console.log("it!"); shows that java script is running when you view the console */
+            console.log("it!");
+            
+            /*var redComponent = "0";*/
+            var redComponent = Math.random()*255;
+
+            /*var greenComponent = "0";*/
+            var greenComponent = Math.random()*255;
+            
+            /*var blueComponent = "255";*/
+            var blueComponent = Math.random()*255;
+
+
+            console.log("Red: " + redComponent);
+            console.log("Green: " + greenComponent);
+            console.log("Blue: " + blueComponent);
+
+            var compRGBString = "rgb(" + redComponent + ","+greenComponent +"," + blueComponent + ")";
+
+            /*make sure to put the console.log(); after the java script function you wrote*/
+            console.log(compRGBString);
+
+
+            /*contentMain.style. add the changes here to make the random changes*/
+            /*contentMain.style.backgroundColor = "rgb(0, "+(Math.random()*255)+", 255)";*/
+            contentMain.style.backgroundColor = compRGBString;
+        } );
+        document.getElementById("contentMain").style.backgroundColor = "rgb(255, 0, 0)";
+
+        function myFunction() {
+        document.body.style.backgroundColor = "pink";
+        }
+
+       
+
+        prompt("Hey, what is your nanme?");
+
+        alert("This is our very first JavaScript written!");
+    
+    </script>
+    
+</body>
+</html>
