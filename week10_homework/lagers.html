@@ -61,6 +61,8 @@
     </footer>
     
     <script>
+        //fighting default of browers, 
+        document.getElementById('toggler').checked = false;
 
         // we'll set up the variables before we describe the function - 
         // this way running the function will not change them
@@ -70,6 +72,7 @@
         /* replace anything that repeats */
         var switchingImage = document.getElementById("beerFull");
 
+        //
         /* grab original variable & store in image1URL src */  
         var image1URL = switchingImage.src;
         /* grab original variable & store in image1URL alt */ 
@@ -80,7 +83,7 @@
         document.getElementById('beerFull').addEventListener('click', function(){
 
 
-            if( switchingImage.src == image3URL ){
+            if( switchingImage.alt == image3Alt ){
                 switchingImage.src = image1URL; //make the source be the 1st URL
                 switchingImage.alt = image1Alt; //make the alt attribute be the 1st alt attribute
 

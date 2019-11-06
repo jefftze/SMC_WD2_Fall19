@@ -63,6 +63,38 @@
     
     <script>
 
+    var image2URL = "https://www.filterforge.com/more/help/images/size400.jpg";
+        var image2Alt = "Electric Chaos.";
+        /* replace anything that repeats */
+        var switchingImage = document.getElementById("imageToSwitch"); 
+
+
+        /* grab original variable & store in image1URL src */    
+        var image1URL = switchingImage.src;
+         /* grab original variable & store in image1URL alt */       
+        var image1Alt = switchingImage.alt;
+
+
+        /* for the button */
+        document.getElementById('imgToggle').addEventListener('click', function(){
+        
+
+
+        /* check point, check what url is */
+            console.log(image1URL);
+
+        /* == is for compare value in java script */
+            if( switchingImage.src == image2URL ){
+                switchingImage.src = image1URL;
+                switchingImage.alt = image1Alt;
+
+            }
+            else {
+                switchingImage.src = image2URL; 
+                switchingImage.alt = image2Alt;  
+
+            }
+
         // we'll set up the variables before we describe the function - 
         // this way running the function will not change them
         /* by running variables first, the contents of image 2 and image 1 are independent */
@@ -114,7 +146,7 @@
             if(makeSelect.value === 'belgian ale'){
               /* \ just use for line breaks in java script*/
               // put the following string as a child in the '#model' element
-            modelSelect.innerHTML = '<option value="Abbey">Abbey</option>\
+            colorSelect.innerHTML = '<option value="Abbey">Abbey</option>\
                                     <option value="Amber">Amber</option>\
                                     <option value="Blond">Blond</option>\
                                     <option value="Dubbel">Dubbel</option>\
@@ -127,7 +159,7 @@
           // if the current value is 'audi'
           if(makeSelect.value === 'stout'){
               // put the following string as a child in the '#model' element
-              modelSelect.innerHTML = '<option value="Chocolate">Chocolate</option>\
+              colorSelect.innerHTML = '<option value="Chocolate">Chocolate</option>\
                                     <option value="Coffee">Coffee</option>\
                                     <option value="Dry Stout">Dry Stout</option>\
                                     <option value="Imperial">Imperial</option>\
@@ -141,7 +173,7 @@
           // if the current value is 'fiat'
           if(makeSelect.value === 'pale ale'){
               // put the following string as a child in the '#model' element
-              modelSelect.innerHTML = '<option value="Altbier">Altbier</option>\
+              colorSelect.innerHTML = '<option value="Altbier">Altbier</option>\
                                         <option value="American">American</option>\
                                         <option value="English Bitter">English Bitter</option>\
                                         <option value="IPA">IPA</option>\
