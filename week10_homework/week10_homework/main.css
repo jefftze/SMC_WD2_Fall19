@@ -1,0 +1,126 @@
+@import url("colors.css");
+
+body { margin: 0px;
+
+}
+
+header {
+    background-color: rgb(191, 200, 200);
+}
+
+header input#toggler{
+    display: none;
+}
+
+header label img {
+    width: 30px;
+    height: auto;
+    margin: 10px;
+}
+nav {
+
+    padding: 20px 10px;
+    display: none;
+}
+
+input#toggler:checked + nav{
+    display: block;
+}
+
+nav ul{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+nav li{
+    border-bottom: 1px solid #212529;
+    padding: 10px 0px;
+    margin: 10px;
+}
+
+nav li:first-child{
+    margin-top:0px;
+}
+nav ul a{
+    text-decoration: none;
+    font-family: 'BioRhyme', serif;
+    color: black;
+    text-transform: uppercase;
+
+}
+body{
+    background-color: rgb(67, 70, 70);
+}
+
+
+/*---------MAIN----------*/
+
+img {
+    max-width: 100%;
+}
+.floater-section{
+    float: left;
+    min-height: 300px;
+    width: 100%;
+}
+
+.container::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
+
+@media(min-width: 540px){
+    nav ul li{
+        display: inline-block;
+        padding-bottom: 5px;
+        border-bottom: 0px;
+        margin: 10px 20px;
+    }
+
+    nav ul {
+        text-align: center;
+    }
+
+    nav{
+        padding: 0px 10px;
+    }
+
+    /*---------MAIN----------*/
+
+    .width-md-50{
+        width: 50%;
+        text-align: center;
+    }
+
+    .width-md-33{
+        width: 33%;
+        text-align: center;
+    }
+
+     /* end of 540px breakpoint*/
+
+@media(min-width: 800px){
+    .width-lg-25{
+        width: 25%;
+    }
+
+    .width-lg-33{
+        width: 33.33%;
+    }
+
+    .width-lg-50{
+        width: 50%;
+    }
+    .width-lg-100{
+        width: 100%;
+    }
+    
+    .img-corner {
+        border-radius: 5%;
+    }
+
+
+}

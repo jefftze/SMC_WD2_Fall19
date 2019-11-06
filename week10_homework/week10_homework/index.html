@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme:800&display=swap" rel="stylesheet"> 
+
+    <title>Week 10 Homework</title>
+</head>
+<body>
+    
+    <header>
+            
+
+            <label for="toggler">
+                <img src="Beer_Full.png"
+                id="beerFull" alt="Beer icon is full.">
+            </label>
+            <input type="checkbox" id="toggler">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Ales</a></li>
+                    <li><a href="lagers.html">Lagers</a></li>
+                </ul>
+            </nav>
+        
+    </header>
+
+    <main>
+        <section>
+            <img src="http://www.beerinfinity.com/wp-content/uploads/16-belgian-and-french-ale-b.jpg" id="imageToSwitch" alt="5 Brands of Belgian Ale.">
+            <button id="imgToggle">Switch!</button>
+        </section>
+
+
+     
+
+        <section>
+        
+            <form action="" method ="GET">
+                <select id="ale type">
+                    <option value ="belgian ale">Belgian Ale</option>
+                    <option value ="stout">Stout</option>
+                    <option value ="pale ale">Pale Ale</option>
+                </select>
+
+                <select id="color">
+                    <option value =""></option>
+                    
+                </select>
+
+            </form>
+        </section>
+    </main>
+
+    <footer>
+
+    </footer>
+    
+    <script>
+
+        // we'll set up the variables before we describe the function - 
+        // this way running the function will not change them
+        /* by running variables first, the contents of image 2 and image 1 are independent */
+        var image3URL = "Beer_Empty.png";
+        var image3Alt =  "Beer icon is empty."
+        /* replace anything that repeats */
+        var switchingImage = document.getElementById("beerFull");
+
+        /* grab original variable & store in image1URL src */  
+        var image1URL = switchingImage.src;
+        /* grab original variable & store in image1URL alt */ 
+        var image1Alt = switchingImage.alt;
+
+        /* for the Nav */
+        // listen for a click on an '#imgToggle' button and run the following function
+        document.getElementById('beerFull').addEventListener('click', function(){
+
+
+            if( switchingImage.src == image3URL ){
+                switchingImage.src = image1URL; //make the source be the 1st URL
+                switchingImage.alt = image1Alt; //make the alt attribute be the 1st alt attribute
+
+            }
+            else { //otherwise - here we'd expect the source of the image is the same as the contents of the image1URL variable
+                switchingImage.src = image3URL; //make the source be the 2nd URL
+                switchingImage.alt = image3Alt; //make the alt attribute be the 2nd alt attribute
+
+
+        /*  for the id="imageToSwitch" if it was not repeating */
+        /*  document.getElementById("imageToSwitch").src= image2URL;
+            document.getElementById("imageToSwitch").alt= image2Alt;
+        */    
+
+    
+        }
+
+
+        })
+        // we'll again set up the variables before the function
+        var makeSelect = document.getElementById('ale type');
+        var modelSelect = document.getElementById('color');
+
+        // here we'll listen for a change in selection and the following function
+        makeSelect.addEventListener('change', function(){
+            // for debugging - print the value of the current selection
+            console.log(makeSelect.value);
+
+            // if the current value is 'bmw'
+            if(makeSelect.value === 'belgian ale'){
+              /* \ just use for line breaks in java script*/
+              // put the following string as a child in the '#model' element
+            modelSelect.innerHTML = '<option value="Abbey">Abbey</option>\
+                                    <option value="Amber">Amber</option>\
+                                    <option value="Blond">Blond</option>\
+                                    <option value="Dubbel">Dubbel</option>\
+                                    <option value="Flemish Red">Flemish Red</option>\
+                                    <option value="Quadrupel">Quadrupel</option>\
+                                    <option value="Trappist">Trappist</option>\
+                                    <option value="Tripel">Tripel</option>';
+
+          }
+          // if the current value is 'audi'
+          if(makeSelect.value === 'stout'){
+              // put the following string as a child in the '#model' element
+              modelSelect.innerHTML = '<option value="Chocolate">Chocolate</option>\
+                                    <option value="Coffee">Coffee</option>\
+                                    <option value="Dry Stout">Dry Stout</option>\
+                                    <option value="Imperial">Imperial</option>\
+                                    <option value="Milk">Milk</option>\
+                                    <option value="Oatmeal">Oatmeal</option>\
+                                    <option value="Oyster">Oyster</option>';
+                                   
+
+          }
+
+          // if the current value is 'fiat'
+          if(makeSelect.value === 'pale ale'){
+              // put the following string as a child in the '#model' element
+              modelSelect.innerHTML = '<option value="Altbier">Altbier</option>\
+                                        <option value="American">American</option>\
+                                        <option value="English Bitter">English Bitter</option>\
+                                        <option value="IPA">IPA</option>\
+                                        <option value="Saison">Saison</option>\
+                                        <option value="Scotch Ale">Scotch Ale</option>';
+
+          }
+
+        } )
+    </script>
+    
+</body>
+</html>
