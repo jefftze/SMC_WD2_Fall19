@@ -49,7 +49,7 @@
                 </select>
 
                 <select id="color">
-                    <option value =""></option>
+                
                     
                 </select>
 
@@ -110,10 +110,10 @@
             // for debugging - print the value of the current selection
             console.log(makeSelect.value);
 
-            // if the current value is 'bmw'
+            // if the current value is 'belgian ale'
             if(makeSelect.value === 'belgian ale'){
               /* \ just use for line breaks in java script*/
-              // put the following string as a child in the '#model' element
+              // put the following string as a child in the 'color' element
             modelSelect.innerHTML = '<option value="Abbey">Abbey</option>\
                                     <option value="Amber">Amber</option>\
                                     <option value="Blond">Blond</option>\
@@ -124,9 +124,9 @@
                                     <option value="Tripel">Tripel</option>';
 
           }
-          // if the current value is 'audi'
+          // if the current value is 'stout'
           if(makeSelect.value === 'stout'){
-              // put the following string as a child in the '#model' element
+              // put the following string as a child in the 'color' element
               modelSelect.innerHTML = '<option value="Chocolate">Chocolate</option>\
                                     <option value="Coffee">Coffee</option>\
                                     <option value="Dry Stout">Dry Stout</option>\
@@ -138,12 +138,12 @@
 
           }
 
-          // if the current value is 'fiat'
+          // if the current value is 'pale ale'
           if(makeSelect.value === 'pale ale'){
-              // put the following string as a child in the '#model' element
+              // put the following string as a child in the 'color' element
               modelSelect.innerHTML = '<option value="Altbier">Altbier</option>\
                                         <option value="American">American</option>\
-                                        <option value="English Bitter">English Bitter<option>\
+                                        <option value="English Bitter">English Bitter</option>\
                                         <option value="IPA">IPA</option>\
                                         <option value="Saison">Saison</option>\
                                         <option value="Scotch Ale">Scotch Ale</option>';
