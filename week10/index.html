@@ -52,6 +52,10 @@
         /* replace anything that repeats */
         var switchingImage = document.getElementById("imageToSwitch"); 
 
+        var divs = document.getElementsByTagName('section');
+
+        console.log(divs);
+
 
         /* grab original variable & store in image1URL src */    
         var image1URL = switchingImage.src;
@@ -93,16 +97,36 @@
        
         var makeSelect = document.getElementById('make');
         var modelSelect = document.getElementById('model');
+        // array starts with 0, 1, 2
+        var bmwModels = [ 'M3', 'M5', 'X5', 'X1', 'X3'];
+        var audiModels = [ 'S4', 'A4', 'R8'];
+        var fiatModels = [ '500', '124', '124ABARTH'];
+        console.log(bmwModels[2])
 
 
         makeSelect.addEventListener('change', function(){
           console.log(makeSelect.value);
 
+          var part1 = '<option value="';
+          var part2 = '">';
+          var part3 ='</option>';
+
           if(makeSelect.value === 'bmw'){
               /* \ just use for line breaks in java script*/
-            modelSelect.innerHTML = '<option value="M3">M3</option>\
-                                    <option value="M5">M5</option>\
-                                    <option value="X5">X5</option>';
+            //modelSelect.innerHTML = '<option value="M3">M3</option>\
+            //                        <option value="M5">M5</option>\
+            //                        <option value="X5">X5</option>';
+
+            //modelSelect.innerHTML = part1 + 'M3' + part2 'M3' + part3 + part1 + 'M5' +
+            //part2 + 'M5' + part3 + part1 'X5' + part2 + 'X5' + part3;
+
+            var newHTML ="";
+            bmwModels.forEach(function(){
+                newHTML += '<option value="'+ item +'">' + item + '</option>';
+
+            })
+
+            modelSelect.innerHTML = newHTML;
 
           }
 

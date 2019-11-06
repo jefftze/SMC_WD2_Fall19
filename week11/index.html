@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>title</title>
+    <style>
+        .main-field{
+            width:700px;
+            height:400px;
+            background-color: mediumorchid;
+
+
+        button[class^="button-"]{
+            
+        }
+    </style>
+  </head>
+  <body>
+    <div class="buttons">
+        <button role ="button" class="button-append">Append!</button>
+        <button role ="button" class="button-prep0end">Prepend!</button>
+        <button role ="button" class="button-before">Before!</button>
+        <button role ="button" class="button-after">After!</button>
+    </div>
+    <div class="main-field">
+    <p>This is an intro to jQuery</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    
+    <script>
+        
+        $(document).ready(function(){
+
+            $('.button-append').click(fucntion(){
+                $('.main-field').append("<p>Hello, jQuery!</p>");
+
+            });
+
+            $('.button-append').click(fucntion(){
+                $('.main-field').prepend("<h2>Welcome</h2>");
+
+            });    
+
+                $('.button-before').click(fucntion(){
+                $('.main-field').before("<h1>I'm first!</h1>");
+
+            });
+
+                $('.button-after').click(fucntion(){
+                $('.main-field').after("<h1>I'm after!</h1>");
+
+            });
+
+            
+           
+        
+
+        });
+    </script>
+  </body>
+</html>
+
+ 
