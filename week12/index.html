@@ -4,21 +4,69 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Fade In</title>
+    <title>JQuery Animations Week 12</title>
   
   <style>
+    .container {
+      background-color: azure;
+      width: 500px;
+      height: 400px;
+    }
+    .box{
+      background-color: darkorange;
+      width: 150px;
+      height: 150px;
+      display: none;
+    }
         
        
   </style>
         
-      </head>
-      <body>
+  </head>
+  <body>
+
+    <header>
+      <form action="" method="POST">
+          <label for="userName">User Name</label>
+          <input type="text" id="userName" name="username"
+          placeholder="Karen Schmidt">
+
+          <label for="userEmail">User Address</label>
+          <input type="email" id="useEmail" name="useremail"
+          placeholder="karen@gmail.com">
+          <br>
+
+          <select id="FX">
+              <option value="" default></option>
+              <option value="show">Show</option>
+              <option value="hide">hide</option>
+              <option value="fadeIn">FadeIn</option>
+              <option value="fadeOut">FadeOut</option>
+              <option value="slideDown">SlideDown</option>
+              <option value="slideUp">SlideUp</option>
+
+
+          </select>
+
+          <input type="submit" value="Send!">
+      
+      </form>
+    </header>
+
+    <main>
+      <section class="notificatoin-area"></section>
+
+      <section class="container">
+          <div class="box"></div>
+      </section>
+
+    </main>
        
      
-      <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-      <script>
+  <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+  <script src="script.js"></script>
       
-      </script>
+ 
        
-      </body>
-      </html>
+  </body>
+  </html>
