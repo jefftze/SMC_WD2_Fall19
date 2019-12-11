@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  
+    <link href="https://fonts.googleapis.com/css?family=BioRhyme:800&display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bitter&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet"> 
+
+    <title>Westside German Shepherd Rescue Donation</title>
+
+    <style>
+      body {
+        font-family: 'Hind', sans-serif;
+        font-size: 17px;
+        padding: 8px;
+      }
+      
+      * {
+        box-sizing: border-box;
+      }
+      
+      .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+      }
+      
+      .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+      }
+      
+      .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+      }
+      
+      .col-75 {
+        -ms-flex: 75%; /* IE10 */
+        flex: 75%;
+      }
+      
+      .col-25,
+      .col-50,
+      .col-75 {
+        padding: 0 16px;
+      }
+      
+      .container {
+        background-color:  #a68160;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid whitesmoke;
+        border-radius: 3px;
+      }
+      
+      input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid rgb(82, 73, 73);
+        border-radius: 3px;
+      }
+      
+      label {
+        margin-bottom: 10px;
+        display: block;
+      }
+      
+      .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+      }
+      
+      .btn {
+        background-color:  rgb(43, 40, 39)50;
+        color: #615243;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+      }
+      
+      .btn:hover {
+        background-color: #ce7318;
+      }
+      
+      a {
+        color: darkred;
+      }
+      
+      hr {
+        border: 1px solid darkred;
+      }
+      
+      span.price {
+        float: right;
+        color: rgb(43, 40, 39);;
+      }
+      
+      /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other (also change the direction - make the "cart" column go on top) */
+      @media (max-width: 800px) {
+        .row {
+          flex-direction: column-reverse;
+        }
+        .col-25 {
+          margin-bottom: 20px;
+        }
+      }
+      </style>
+</head>
+<body>
+    
+    <header>
+            
+
+            <label for="toggler">
+                <img src="DogStand.png"
+                id="dogStand" alt="Standing Dog.">
+            </label>
+            <input type="checkbox" id="toggler">
+
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="adopt.html">Adopt</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                </ul>
+            </nav>
+
+
+        
+    </header>
+
+    <main>
+        <div class="conatiner">
+            <div class="floater-section-100 width-md-100 darkgray">
+                <div class="content">
+                    <img src="group.jpg" alt="Group of dogs" class="center">
+                     
+            </div>
+        </div>
+
+        <h2>Please Donate to Westside German Shepherd Rescue</h2>
+<p>Westside German Shepherd Rescue of Los Angeles is a non profit 501(c)3, no kill rescue committed to saving all types of German Shepherd Dogs from high kill shelters and adopting them to loving, qualified homes. It is run moslty by volunteers, any monetary amount is greatly appreciated.</p>
+<div class="row">
+  <div class="col-75">
+    <div class="container">
+      <form action="/action_page.php">
+      
+        <div class="row">
+          <div class="col-50">
+            <h3>Billing Address</h3>
+            <label for="fname"><i class="fa fa-user"></i> Full Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="John M. Doe">
+            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+            <input type="text" id="email" name="email" placeholder="john@example.com">
+            <label for="adr"><i class="fa fa-address-card-o"></i> Address</label>
+            <input type="text" id="adr" name="address" placeholder="542 W. 15th Street">
+            <label for="city"><i class="fa fa-institution"></i> City</label>
+            <input type="text" id="city" name="city" placeholder="New York">
+
+            <div class="row">
+              <div class="col-50">
+                <label for="state">State</label>
+                <input type="text" id="state" name="state" placeholder="NY">
+              </div>
+              <div class="col-50">
+                <label for="zip">Zip</label>
+                <input type="text" id="zip" name="zip" placeholder="10001">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-50">
+            <h3>Payment</h3>
+            <label for="fname">Accepted Cards</label>
+            <div class="icon-container">
+              <i class="fa fa-cc-visa" style="color:rgb(54, 54, 54);"></i>
+              <i class="fa fa-cc-amex" style="color:rgb(54, 54, 54);"></i>
+              <i class="fa fa-cc-mastercard" style="color:rgb(54, 54, 54);"></i>
+              <i class="fa fa-cc-discover" style="color:rgb(54, 54, 54);"></i>
+            </div>
+            <label for="cname">Name on Card</label>
+            <input type="text" id="cname" name="cardname" placeholder="John More Doe">
+            <label for="ccnum">Credit card number</label>
+            <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+            <label for="expmonth">Exp Month</label>
+            <input type="text" id="expmonth" name="expmonth" placeholder="September">
+            <div class="row">
+              <div class="col-50">
+                <label for="expyear">Exp Year</label>
+                <input type="text" id="expyear" name="expyear" placeholder="2018">
+              </div>
+              <div class="col-50">
+                <label for="cvv">CVV</label>
+                <input type="text" id="cvv" name="cvv" placeholder="352">
+              </div>
+            </div>
+          </div>
+          
+        </div>
+       
+        <input type="submit" value="Click to Donate" class="btn">
+      </form>
+    </div>
+  </div>
+  
+
+
+ 
+
+
+          
+
+<div class="conatiner">
+        <div class="floater-section-100 width-md-100 darkgray">
+            <div class="content">
+                <img src="Rescue.jpg" alt="Previously Adopted Dogs" class="center">
+                <br>
+                   
+                    <h4>3016 S. Hill St, Los Angeles CA 90007</h4>
+                    <h4> Wed., Sat., Sun. 11am to 3pm. Other days by appointment only.</h4>
+                
+                
+                    
+                    <h1>(310) 202-7283</h1>
+                           
+                        
+    </div>
+</div>
+    </main>
+
+    <footer>
+
+    <div class="footer">
+                    <p>© 2004-07 Westside German Shepherd Rescue. All rights reserved. Updated 12/02/2019</p>
+                  </div>
+
+    </footer>
+    
+    
+        
+
+
+    
+</body>
+</html>
