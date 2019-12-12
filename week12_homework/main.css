@@ -1,0 +1,77 @@
+@import "navbar.css";
+/*Figure out how to keep the nav bar in a row for full pg view and then as columns in mobile not column for both*/
+
+
+
+
+@media(min-width:540px){
+    
+    
+    .container-1{
+      display:flex;
+      /*
+      align-items:flex-start;
+      align-items:flex-end;
+      align-items:center;
+      
+      flex-direction:column;
+      */
+    }
+    
+    .container-2{
+      display:flex;  
+      /*
+      justify-content:flex-start;
+      justify-content:flex-end;
+      justify-content:center;
+      justify-content:space-around;
+      */
+    }
+  }
+  
+  .container-3{
+    display:flex;  
+    flex-wrap:wrap;
+    justify-content:space-between;
+  }
+  
+  .container-1 div, .container-2 div, .container-3 div{
+    border:1px #f11010 solid;
+    padding:10px;
+  }
+
+  .box-1{
+    flex:3;
+    order:1;
+  }
+  
+  .box-2{
+    flex:1;
+    order:2;
+  }
+  
+  .box-3{
+    flex:1;
+    order: 3;
+  }
+
+.box-4{
+    flex:1;
+    order:1;
+  }
+.box-5{
+    flex:3;
+    order:2;
+  }
+  
+  .container-2-box{
+    flex-basis: 27%;  
+  }
+  
+  .container-3-box{
+    flex-basis:12%;
+  }
+.introimg{
+    height:225px;
+    width:175px;
+}
